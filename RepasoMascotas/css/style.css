@@ -1,0 +1,134 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+#contenedor {
+    width: 90%;
+    max-width: 600px;
+    background: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #80b3eb;
+    color: black;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 10px 10px 0 0;
+}
+
+section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#quees{
+    padding: 30px;
+}
+
+#mascotas {
+    width: 600px;
+    margin: 10px 0;
+}
+#titulo{
+    color: #80b3eb;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+article, aside {
+    text-align: justify;
+    padding: 25px;
+    background-color: #eff8ff;
+}
+
+h2 {
+    text-align: center;
+    margin: 40px;
+    padding: 20px;
+}
+
+#galeria{
+    color: #80b3eb;
+    font-weight: bold;
+    margin: 40px;
+}
+
+#gallery {
+    width: 100%;
+    text-align: center;
+}
+
+#photos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+aside{
+    margin-top: 100px;
+}
+
+#photos img {
+    width: 80%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #80b3eb;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px;
+    font-weight: bold;
+}
+
+/* Estilos para tablet */
+@media screen and (min-width: 768px) {
+    #contenedor {
+        max-width: 900px;
+    }
+    
+    #mascotas {
+        width: 100%;
+    }
+    
+    #photos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    #photos img {
+        width: 45%;
+    }
+}
+
+/* Estilos para ordenador */
+@media screen and (min-width: 1024px) {
+    #contenedor {
+        max-width: 1200px;
+    }
+    
+    #mascotas {
+        width: 100%;
+    }
+    
+    #photos img {
+        width: 30%;
+    }
+}
